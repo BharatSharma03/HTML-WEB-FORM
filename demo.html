@@ -4,6 +4,87 @@
         <title>Web form</title>
     </head>
     <body>
+        <fieldset>
+            <legend > Personal Information</legend>
+        <!--personal information box-->
+        <!--for firstname-->
+        <label for="fanme" >Full Name :</label>
+        <input type="text" name="fname"><br><br>
+        <!--for email -->
+        <label for="email">Email :</label>
+        <input type="email" name="email"><br><br>
+        <!--for password-->
+        <label for="pwd">password:</label>
+        <input type="password" name="pwd"><br><br>
+        <!--for age-->
+        <label for="age">Age : </label>
+        <input type="text" name="age"><br><br>
+        <!--DOB-->
+        <label for="DOB">Date of Birth :</label>
+        <input type="date" name="dob"><br><br>
+        <!--select time-->
+        <label for="time">Select a Time</label>
+        <input type="time" name="time"><br><br>
+        </fieldset>
+        <!--Preference boxx-->
+        <fieldset>
+            <legend>Preference</legend>
+        <!--Radiobutton  for gender-->
+        <label for="gender">Gender :</label><br>
+        <input type="radio" name="gender" value=Male>
+        <label for="gender">Male</label><br>
+        <input type="radio" name="gender" value=Female>
+        <label for="gender">Female</label><br>
+        <input type="radio" name="gender" value=Other>
+        <label for="gender">Other</label><br><br>
+        <!--Checkbox  for hobbies-->
+        <label for="Hobbies">Hobbies :</label><br>
+        <input type="checkbox" name="Hobbies">
+        <label for="reading">Reading</label><br>
+        <input type="checkbox" name="Travelling">
+        <label for="Travelling">Travelling</label><br>
+        <input type="checkbox" name="Sports">
+        <label for="Sports">Sports</label><br><br>
+        <!--Dropdown box for a country-->
+        <label for="country">Country :</label>
+        <select>
+            <option value="country">United states </option>
+            <option value="country">India</option>
+            <option value="country">Pakistan</option>
+            <option value="country">China</option>
+            <option value="country">Japan</option>
+            <option value="country">UAE</option>
+            <option value="country">Srilanka</option>
+            <option value="country">Uk</option>
+            <option value="country">Canada</option><br>
+        </select><br><br>
         
+        <!--multiple items dropdown box-->
+        <label for="Language">Language Known :</label><br>
+        <select size="4" multiple>
+            <option value="Language">English </option>
+            <option value="Language">Spanish</option>
+            <option value="Language">Frensh</option>
+            <option value="Language">German</option>
+        </select><br><br>
+        <!--textbox for a shortbio-->
+        <label for="short bio">Short Bio :</label><br>
+        <textarea rows="4" cols="45"></textarea>
+        </fieldset>
+        <!--Additional information box-->
+        <fieldset>
+            <legend>Additional Information</legend><br>
+            <label for="picture">Upload Profile Picture :</label>
+            <input type="file" name="picture"><br><br>
+            <label for="range">Rate our service :</label>
+            <input type="range" name="range" min="0" max="10"><br><br>
+            <label for="Color">Favourite Color :</label>
+            <input type="color" name="Color"><br><br>
+        </fieldset>
+        <!--Additional information box-->
+        <button type="button" onclick="alert('Done')">Submit</button>
+        <input type="reset" name="reset" value="reset">
+
+
     </body>
 </html>
